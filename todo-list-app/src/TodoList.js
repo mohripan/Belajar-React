@@ -20,6 +20,11 @@ function TodoList() {
         setTodos(newTodos);
     };
 
+    const clearCompleted = () => {
+        const newTodos = todos.filter((todo) => !todo.completed);
+        setTodos(newTodos);
+    }
+
     return (
         <div className="container mx-auto p-4">
             <h2 className="text-2xl font-bold mb-4">Todo List</h2>
@@ -28,6 +33,7 @@ function TodoList() {
                 type="text"
                 value={task}
                 onChange={(e) => setTask(e.target.value)}
+                onKeyPress={(e) => e.key === 'Enter' && addTodo()}
                 className="flex-grow p-2 border border-gray-300 rounded mr-2"
                 placeholder="Add a new task"
             ></input>
@@ -50,6 +56,12 @@ function TodoList() {
                     </li>
                 ))}
             </ul>
+            <button
+                onClick={clearCompleted}
+                className="mt-4 bg-yellow-500 text-white px-4 py-2 rounded"
+            >
+                Clear Completed Task
+            </button>
         </div>
     );
 }

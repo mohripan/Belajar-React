@@ -1,0 +1,25 @@
+/* src/components/Ending2.css */
+.ending-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  .ending-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .ending-text {
+    margin-top: 1rem;
+  }
+  .btn {
+    background-color: #10b981;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #059669;
+  }
+  

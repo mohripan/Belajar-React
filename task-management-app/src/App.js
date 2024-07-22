@@ -1,10 +1,11 @@
-import React from "react";
-import Counter from "./components/Counter";
+// src/App.js
+import React from 'react';
+import Auth from './components/Auth';
 
 const App = () => {
   return (
-    <div className="bg-gray-200 min-h-screen p-4">
-      <Counter />
+    <div className="bg-gray-100 min-h-screen p-4">
+      <Auth />
     </div>
   );
 };
